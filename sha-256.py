@@ -84,9 +84,7 @@ class SHA256:
         return schedule
 
     def __right_rotate(self, word: int, positions: int) -> int:
-        lower = word & (2**positions - 1)
-        upper = word >> positions
-        return (lower << (32 - positions)) | upper
+        return word << (32 - positions) | word >> positions
 
     def __right_shift(self, word: int, positions: int) -> int:
         return word >> positions
