@@ -3,13 +3,13 @@
 ## Usage
 ```sh
 # With text input
-python sha-256.py -t 'Hello world'
+python3 src/sha-256.py -t 'Hello world'
 # With file input
-python sha-256.py -f *[file]*
+python3 src/sha-256.py -f [file]
 ```
 
 ## Linting and type checking
 ```sh
-flake8 --config=.flake8 sha-256.py
-mypy sha-256.py
+flake8 --config=.flake8 src/sha-256.py
+mypy src/sha-256.py
 ```
